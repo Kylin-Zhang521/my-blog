@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+#app {
+    height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*头部内容*/
+header {
+    height: 60px;
+    background: #333;
+    padding: 5px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbox {
+    width: 1200px;
+    margin: auto;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbox .logo a {
+    color: #ffffff;
+    font-size: 22px;
+    margin-right: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+    display: flex;
+    width: 870px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.list li {
+    color: #ffffff;
+    flex: 1;
+    text-align: center;
+}
+
+.list li:hover {
+    color: #00c1de;
+    cursor: pointer;
+}
+
+.seatch {
+    width: 39px;
+    cursor: pointer;
+}
+
+/*主体内容*/
+article {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.whitebg {
+    background: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    overflow: hidden;
+    box-sizing: border-box;
+    color: #000;
+    width: 900px;
+}
+
+.whitebg .whitebg-list ul {
+    display: flex;
+}
+
+.whitebg .whitebg-list ul li {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.whitebg .whitebg-list ul li:hover {
+    border-bottom: 1px solid #333;
 }
