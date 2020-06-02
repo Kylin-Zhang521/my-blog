@@ -1,0 +1,362 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": 123456,
+      "roleName": "超级管理员",
+      "roleState": true,
+      "default": true,
+      "roleType": 3
+    },
+    {
+      "username": "aaa",
+      "password": "123",
+      "roleName": "小编",
+      "roleType": 1,
+      "roleState": true,
+      "id": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "roleName": "超级管理员",
+      "roleRight": [
+        {
+          "category": "文章管理",
+          "list": [
+            "文章列表",
+            "创建文章",
+            "文章预览",
+            "文章分类"
+          ]
+        },
+        {
+          "category": "用户管理",
+          "list": [
+            "用户列表",
+            "添加用户",
+            "删除用户",
+            "修改用户"
+          ]
+        },
+        {
+          "category": "权限管理",
+          "list": [
+            "角色列表",
+            "权限列表",
+            "添加角色",
+            "修改角色",
+            "删除角色"
+          ]
+        }
+      ],
+      "default": true
+    },
+    {
+      "id": 2,
+      "roleName": "管理员",
+      "roleRight": [
+        {
+          "category": "文章管理",
+          "list": [
+            "文章列表",
+            "创建文章",
+            "文章预览",
+            "文章分类"
+          ]
+        }
+      ],
+      "default": true
+    },
+    {
+      "id": 3,
+      "roleName": "小编",
+      "roleRight": [
+        {
+          "category": "文章管理",
+          "list": [
+            "文章列表",
+            "创建文章",
+            "文章预览"
+          ]
+        }
+      ],
+      "default": true
+    }
+  ],
+  "rights": [
+    {
+      "id": 1,
+      "title": "文章列表",
+      "key": "文章管理-文章列表",
+      "grade": 1,
+      "category": "文章管理"
+    },
+    {
+      "id": 2,
+      "title": "创建文章",
+      "key": "文章管理-创建文章",
+      "grade": 1,
+      "category": "文章管理"
+    },
+    {
+      "id": 3,
+      "title": "文章预览",
+      "key": "文章管理-文章预览",
+      "grade": 1,
+      "category": "文章管理"
+    },
+    {
+      "id": 4,
+      "title": "文章分类",
+      "key": "文章管理-文章分类",
+      "grade": 2,
+      "category": "文章管理"
+    },
+    {
+      "id": 5,
+      "title": "用户列表",
+      "key": "用户管理-用户列表",
+      "grade": 3,
+      "category": "用户管理"
+    },
+    {
+      "id": 6,
+      "title": "添加用户",
+      "key": "用户管理-添加用户",
+      "grade": 3,
+      "category": "用户管理"
+    },
+    {
+      "id": 7,
+      "title": "删除用户",
+      "key": "用户管理-删除用户",
+      "grade": 3,
+      "category": "用户管理"
+    },
+    {
+      "id": 8,
+      "title": "修改用户",
+      "key": "用户管理-修改用户",
+      "grade": 3,
+      "category": "用户管理"
+    },
+    {
+      "id": 9,
+      "title": "角色列表",
+      "key": "权限管理-角色列表",
+      "grade": 3,
+      "category": "权限管理"
+    },
+    {
+      "id": 10,
+      "title": "权限列表",
+      "key": "权限管理-权限列表",
+      "grade": 3,
+      "category": "权限管理"
+    },
+    {
+      "id": 11,
+      "title": "添加角色",
+      "key": "权限管理-添加角色",
+      "grade": 3,
+      "category": "权限管理"
+    },
+    {
+      "id": 12,
+      "title": "修改角色",
+      "key": "权限管理-修改角色",
+      "grade": 3,
+      "category": "权限管理"
+    },
+    {
+      "id": 13,
+      "title": "删除角色",
+      "key": "权限管理-删除角色",
+      "grade": 3,
+      "category": "权限管理"
+    }
+  ],
+  "categories": [
+    {
+      "title": "IT",
+      "value": "IT",
+      "id": 11,
+      "default": true,
+      "grade": 1,
+      "children": [
+        {
+          "title": "前端",
+          "value": "前端",
+          "id": 111,
+          "default": true,
+          "grade": 2,
+          "children": [
+            {
+              "title": "Vue",
+              "value": "Vue",
+              "id": 1111,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "React",
+              "value": "React",
+              "id": 1112,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "Angular",
+              "value": "Angular",
+              "id": 1113,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "小程序",
+              "value": "小程序",
+              "id": 1114,
+              "default": true,
+              "grade": 3
+            }
+          ]
+        },
+        {
+          "title": "Java",
+          "value": "Java",
+          "id": 112,
+          "default": true,
+          "grade": 2,
+          "children": []
+        },
+        {
+          "title": "Python",
+          "value": "Python",
+          "id": 113,
+          "default": true,
+          "grade": 2,
+          "children": []
+        },
+        {
+          "title": "PHP",
+          "value": "PHP",
+          "id": 114,
+          "default": true,
+          "grade": 2,
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "娱乐",
+      "value": "娱乐",
+      "id": 12,
+      "default": true,
+      "grade": 1,
+      "children": [
+        {
+          "title": "明星",
+          "value": "明星",
+          "id": 121,
+          "default": true,
+          "grade": 2,
+          "children": []
+        },
+        {
+          "title": "电影",
+          "value": "电影",
+          "id": 122,
+          "default": true,
+          "grade": 2,
+          "children": [
+            {
+              "title": "华语",
+              "value": "华语",
+              "id": 1221,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "欧美",
+              "value": "欧美",
+              "id": 1222,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "日韩",
+              "value": "日韩",
+              "id": 1223,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "美图",
+              "value": "美图",
+              "id": 1224,
+              "default": true,
+              "grade": 3
+            },
+            {
+              "title": "影评",
+              "value": "影评",
+              "id": 1225,
+              "default": true,
+              "grade": 3
+            }
+          ]
+        },
+        {
+          "title": "星座",
+          "value": "星座",
+          "id": 123,
+          "default": true,
+          "grade": 2,
+          "children": []
+        }
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "title": "react入门",
+      "category": [
+        "IT",
+        "前端",
+        "React"
+      ],
+      "content": "<p>react从入门到放弃</p>\n",
+      "author": "admin",
+      "roleType": 3,
+      "id": 1
+    },
+    {
+      "title": "vue入门",
+      "category": [
+        "IT",
+        "前端",
+        "Vue"
+      ],
+      "content": "<p>vue从入门到放弃</p>\n",
+      "author": "admin",
+      "roleType": 3,
+      "id": 2
+    },
+    {
+      "title": "Angular入门",
+      "category": [
+        "IT",
+        "前端",
+        "Angular"
+      ],
+      "content": "<p>从入门到放弃</p>\n",
+      "author": "admin",
+      "roleType": 3,
+      "id": 3
+    }
+  ],
+  "coming":[{"id":1301774,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/60f85d237dc024edb46e5badfaa71c29512553.jpg","version":"","nm":"错爱迷踪","preShow":false,"sc":0,"globalReleased":false,"wish":6689,"star":"尹亚森,曾晨,马翼","rt":"2020-06-19","showst":1,"wishst":0,"comingTitle":"6月19日 周五"},{"id":1241385,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/f52ccebd4f91402b6532f44a494713855261102.jpg","version":"","nm":"秘密访客","preShow":false,"sc":0,"globalReleased":false,"wish":24207,"star":"郭富城,段奕宏,张子枫","rt":"2020-06-25","showst":1,"wishst":0,"comingTitle":"6月25日 周四"},{"id":1233290,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/afcf5837b6f1955a2c136542c0ed9d32392283.jpg","version":"","nm":"无名狂","preShow":false,"sc":0,"globalReleased":false,"wish":910,"star":"张晓晨,隋咏良,上白","rt":"2020-06-25","showst":1,"wishst":0,"comingTitle":"6月25日 周四"},{"id":1294417,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/582d57e86924b47279c001dca5a12adb5773823.png","version":"","nm":"危险记忆","preShow":false,"sc":0,"globalReleased":false,"wish":5300,"star":"甘婷婷,李滨,乔乔","rt":"2020-06","showst":1,"wishst":0,"comingTitle":"6月 待定"},{"id":1302405,"haspromotionTag":false,"img":"http://p1.meituan.net/w.h/movie/81fe2197ef930c79624a28cc76c423835264620.png","version":"","nm":"小公主艾薇拉与神秘王国2","preShow":false,"sc":0,"globalReleased":false,"wish":7286,"rt":"2020-07-04","showst":1,"wishst":0,"comingTitle":"7月4日 周六"},{"id":1197077,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/07e0ee6c6f30700e6d4ab6774d95fc4f108727.jpg","version":"","nm":"我的初恋十八岁","preShow":false,"sc":0,"globalReleased":false,"wish":27939,"star":"林辰涵,边天扬,翁虹","rt":"2020-07-10","showst":1,"wishst":0,"comingTitle":"7月10日 周五"},{"id":1302281,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/moviemachine/1d2b4985d0187b437d41a73994ba2e191607376.jpg","version":"","nm":"奇妙王国之魔法奇缘","preShow":false,"sc":0,"globalReleased":false,"wish":9280,"star":"卢瑶,张洋,陈新玥","rt":"2020-07-11","showst":1,"wishst":0,"comingTitle":"7月11日 周六"},{"id":1318812,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/6adbe9c365a3aaadfb65910bc279bf6a3385927.jpg","version":"","nm":"沉香","preShow":false,"sc":0,"globalReleased":false,"wish":1202,"star":"朱仲春,尹航,梁靖晨","rt":"2020-07-24","showst":1,"wishst":0,"comingTitle":"7月24日 周五"},{"id":1222268,"haspromotionTag":false,"img":"http://p1.meituan.net/w.h/movie/a19913517ec4dd7b1e8c56a199ceaa4280560.jpg","version":"","nm":"天下无拐","preShow":false,"sc":0,"globalReleased":false,"wish":11592,"star":"吕良伟,郑昊,王婉娟","rt":"2020-07-30","showst":1,"wishst":0,"comingTitle":"7月30日 周四"},{"id":665702,"haspromotionTag":false,"img":"http://p0.meituan.net/w.h/movie/eb37c5b78ec0c14aaad707700fcc1443390529.jpg","version":"","nm":"恋上美人鱼","preShow":false,"sc":0,"globalReleased":false,"wish":2234,"star":"赵鸿飞,雷牧","rt":"2020-07-31","showst":1,"wishst":0,"comingTitle":"7月31日 周五"}],"movieIds":[1301774,1241385,1233290,1294417,1302405,1197077,1302281,1318812,1222268,665702,1218142,1218188,343130,1301478,1250661,1219866,1277751,1299124,1208919,1298859,1244901,1048268,1212627,1220824,1217023,1211269,461076,1217123,248585,344450,346210,1216053,1298938,1199007,489894,1230199,342178,1213079,1233316,1241850,1301444,342485,1283276,1286060,1236599,341890,1212559,1298349,1282454,1284360,1190383,1219410,1244277,1292570,1229298,1217249,1215685,1226583,341370,1218159,1229577,346302,195,345810,1185170,1286015,248940,247863,1292606,1259189,1280270,1223030,1229576,346190,1218157,1208645,1262874,1247810,1250950,1278598,346306,344160,1238922,1212538,1132856,343360,246040,1204092,1257047,1299144,345644,1298030,1300027,248908,1250674,1302494,1292500,1291077,1229661,1208258,1229373,1261532,1263312,1208921,1207371,1283507,1301543,1302492,1207303,1215749,1302381,70038,1302486]
+}
